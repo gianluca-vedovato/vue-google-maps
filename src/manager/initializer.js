@@ -36,6 +36,8 @@ export default (() => {
       return
     }
 
+    if (window.google && window.google.maps) return
+
     if (!isApiSetUp) {
       isApiSetUp = true
 
